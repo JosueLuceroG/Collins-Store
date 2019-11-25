@@ -36,7 +36,7 @@
     align-content: space-between;
     align-items: center;
     padding-bottom: 0;
-    background-color: red;
+    
 }
 
 .c-header__wrapper .c-header__sub-wrapper * {
@@ -58,7 +58,7 @@
     font-size: 30px;
     display: flex;
     align-items: center;
-    padding: 0px 20px 0px 25px;
+    padding: 0px 20px 0px 70px;
     margin: -23px 0px 0px 0px;
     align-self: stretch;   
 }
@@ -66,6 +66,10 @@
 .c-header__p:hover {
     background-color: rgba(255, 255, 255, 0.4);
 } 
+
+.c-header__logo:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
 
 
 .c-header__submenu {  /* ul */
@@ -109,32 +113,101 @@
   
 
 
+/* derecha */
 
 
-
-
-
+/*
 .c-header__tools_wrapper {
     display: flex;
-    min-width: 360px;
+    min-width: 760px;
     justify-content: flex-end;
     padding-top: 4px;
 }
+*/ 
+ 
+#header #buscador .c-header__search-wrapper  {
+    padding: 0;
+    float: initial;
+    z-index: 10000;
+}
 
 
+.c-header__search-wrapper {
+   
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.c-header__search-wrapper {
+    margin: 4px 12px 0 0;
+}
 
 
+.c-header__search-wrapper:before { /* icono izq de la barra */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* font-size: 20px; */
+}
+
+.icooy-lupa-buscar:before {
+    content: "-";
+}
 
 
+.c-header__wrapper .c-header__search-wrapper * { /* texto de la barra*/
+    transition: all 1.4s ease;
+    color: #FFFFFF;
+}
+
+.c-header__search {
+    border-bottom-color: #FFF;
+}
+
+.c-header__search { /* barra */
+    
+    font-size: 14px;
+    padding: 0 0 2px;
+    margin-left: 30px;
+    width: 200px;
+    border-bottom-width: 0.8px;
+    border-bottom-style: solid;
+    letter-spacing: 0.66px;
+}
 
 
+.c-login__icon {  
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 10px 6px;
+    display: block;
+    z-index: 10000;
+    position: relative;
+}
+
+.c-login__icon:before {
+    display: block;
+    font-size: 19px;
+}
+
+.icooy-usuario:before {
+    content: "login";
+}
 
 
-
-
-
-
-
+.c-login__container-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 465px;
+    pointer-events: none;
+    overflow: hidden;
+}
 
 
 
@@ -177,23 +250,24 @@ p.sub {
 }
 
 
+
 #content-icon {
+    margin: 10px 10px 10px 0px;
     position: absolute;
-    bottom: 20px;
-    left: 40% ;
-    width: 10px;
-    height: 20px;
-    padding: 23px;
+    bottom: 0;
+    left: 2% ;
+    width: 0;
+    top: -17px;
+    height: 0;
+    padding: 0px 30px 7px 0px;
     border-bottom: 2px solid;
 
 } 
 
 #content-icon::after {
-    content: '';
+    content: '___';
+    font-weight: 700;
     border-bottom: 2px solid;
-    color: #FFFFFF;
-    border-top: 2px solid;
-    color: #FFFFFF;
     width: 40px;
     height: 17px;
     position: absolute;
@@ -202,6 +276,8 @@ p.sub {
    
     
 }
+
+
 
 
 
