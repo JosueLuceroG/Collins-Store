@@ -54,11 +54,11 @@
     flex-grow: 1;
 }
 
-.c-header__p {  /* menu */
-    font-size: 30px;
+.c-header__p {  /* menu IZQUIERDA */
+    font-size: 20px;
     display: flex;
     align-items: center;
-    padding: 0px 20px 0px 70px;
+    padding: 0px 1px 0px 70px;
     margin: -23px 0px 0px 0px;
     align-self: stretch;   
 }
@@ -97,16 +97,30 @@
 
 .c-header__logo {
     box-sizing: border-box;
+    font-size: 18px;
     display: block;
-    padding: 29px 50px 3px;
+    padding: 29px 60px 3px;
     margin: -10px 0px 0px 0px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent;   /*  border bottom del active */
+    
+}
+
+.c-header__mas {
+    box-sizing: border-box;
+    font-size: 18px;
+    display: block;
+    padding: 29px 72px 3px;
+    margin: -10px 0px 0px 0px;
+    border-bottom: 2px solid transparent;   /*  border bottom del active */
     
 }
 
 .font {
-    font-size: 30px;
-    
+    position: relative;
+    top: -4px;
+    bottom: 0px;
+    left: -9px;
+    right: 0px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 }
@@ -141,7 +155,7 @@
 }
 
 .c-header__search-wrapper {
-    margin: 4px 12px 0 0;
+    margin: -12px 18px -1px 0px;
 }
 
 
@@ -169,7 +183,7 @@
 
 .c-header__search { /* barra */
     
-    font-size: 14px;
+    font-size: 12px;
     padding: 0 0 2px;
     margin-left: 30px;
     width: 200px;
@@ -180,13 +194,14 @@
 
 
 .c-login__icon {  
+    position: relative;
     border: none;
     background-color: transparent;
     cursor: pointer;
     padding: 0 10px 6px;
     display: block;
     z-index: 10000;
-    position: relative;
+   
 }
 
 .c-login__icon:before {
@@ -252,23 +267,23 @@ p.sub {
 
 
 #content-icon {
-    margin: 10px 10px 10px 0px;
+    margin: 10px 0px 0px 3px;
     position: absolute;
-    bottom: 0;
-    left: 2% ;
-    width: 0;
-    top: -17px;
-    height: 0;
+    bottom: 0px;
+    left: 0.9em ;
+    width: 0px;
+    top: -23px;
+    height: 0px;
     padding: 0px 30px 7px 0px;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
 
 } 
 
 #content-icon::after {
     content: '___';
     font-weight: 700;
-    border-bottom: 2px solid;
-    width: 40px;
+    border-bottom: 1px solid;
+    width: 23px;
     height: 17px;
     position: absolute;
     left: 0px;
@@ -278,8 +293,36 @@ p.sub {
 }
 
 
+/* Segundo div */
 
+.div-section2 {
+    background: url("../../media/cover_01.jpg");
 
+    background-size: cover;
+}
+
+/* tercer div */
+
+.div-section3 {
+    background: url("../../media/cover_02.jpg");
+
+    background-size: cover;
+}
+
+/* cuarto div */
+
+.div-section4 {
+    background: url("../../media/cover_03.png");
+
+    background-size: cover;
+}
+ /* quinto div */
+
+.div-section5 {
+    background: url("../../media/cover_04.png");
+
+    background-size: cover;
+}
 
 /* icono chevron-down animation */
 
