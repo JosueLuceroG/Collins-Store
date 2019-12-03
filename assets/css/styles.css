@@ -552,30 +552,20 @@ div.footerSection{
   display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
+   
     flex-wrap: wrap
 }
 
 .footerSection{
-  display: -webkit-box;
-    display: -ms-flexbox;
+ 
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
+  
     flex-wrap: wrap
 }
 
 .footerSection-links{
   width: 44%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -583,8 +573,7 @@ div.footerSection{
 
 div.footerSection-links{
   width: 44%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+ 
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -608,21 +597,14 @@ div.footerSection-links{
 .footerSection-social{
   width: 15%;
   display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
 }
 
 .footerSection-social .list--inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  
   align-items: center;
 }
 
@@ -655,56 +637,5 @@ div.footerSection-links{
   margin: -1px;
   padding: 0;
   border: 0;
-}
-
-/* ________________________- */
-
-.footer-v1 .bottom-footer {
-  background-color: #fff;
-}
-
-.footer .middle-footer .logo-footer {
-  margin-bottom: 30px;
-  margin-top: 5px;
-}
-
-.footer-contact li em {
-  font-size: 24px;
-  color: #878787;
-  width: 30px;
-  text-align: left;
-  font-weight: 700;
-}
-
-.footer .bottom-footer {
-  padding: 20px 0;
-  line-height: 1;
-}
-
-address {
-  line-height: 22px;
-}
-
-address {
-  font-style: normal;
-  line-height: 1;
-  margin: 0;
-}
-
-.pull-right {
-  float: right!important;
-}
-              
-
-
-
-
-
-
-.footer .main-link {
-  display: inline-flex;
-  display: -webkit-inline-flex;
-  justify-content: flex-end;
-  -webkit-justify-content: flex-end;
 }
 

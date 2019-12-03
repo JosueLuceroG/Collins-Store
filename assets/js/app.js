@@ -27,6 +27,7 @@ const ccña = new fullpage("#fullpage", {
       barraBuscar.style.color = "white";
       barraBuscar.style.borderColor = "white";
       user.style.color = "white";
+      menuheader.style.backgroundColor = "transparent";
     }
 
     if (destination.anchor == "2div") {
@@ -40,6 +41,7 @@ const ccña = new fullpage("#fullpage", {
       barraBuscar.style.color = "black";
       barraBuscar.style.borderColor = "black";
       user.style.color = "black";
+      menuheader.style.backgroundColor = "transparent";
     }
 
     if (destination.anchor == "3div") {
@@ -53,6 +55,7 @@ const ccña = new fullpage("#fullpage", {
       barraBuscar.style.color = "white";
       barraBuscar.style.borderColor = "white";
       user.style.color = "white";
+      menuheader.style.backgroundColor = "transparent";
     }
 
     if (destination.anchor == "4div") {
