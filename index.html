@@ -1,209 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CCÑA</title>
-    <script
-      src="https://kit.fontawesome.com/94ae7ff0f2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="c-header" style="padding-bottom: 0;">
-      <div id="menuheader" class="c-header__wrapper">
-        <div class="c-header__sub-wrapper">
-          <a href="#" id="menup" alt="" class="c-header__p">
-            <span id="content-icon"></span
-          ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>CCÑA</title>
+  <script src="https://kit.fontawesome.com/94ae7ff0f2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-          <ul id="menu" class="c-header__submenu">
-            <li
-              data-menuanchor="inicio"
-              class="c-header__li-logo c-header__li-logo--active "
-            >
-              <a href="#inicio" alt="inicio" class="c-header__logo">
-                <span id="color_menu" class="font">Inicio</span>
-              </a>
-            </li>
-            <li data-menuanchor="mas" class="c-header__li-logo ">
-              <a
-                href="#"
-                alt="mas"
-                id="indice"
-                class="c-header__logo c-header__mas"
-              >
-                <span id="color_menumas" class="font">Más</span></a
-              >
-            </li>
-          </ul>
-        </div>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-        <div class="c-header__tools_wrapper"></div>
-        <a href="#" id="buscador" class="c-header__search-wrapper">
-          <i id="lupa" class="fas fa-search"></i>
-          <span id="barraBuscar" class="c-header__search">Buscar</span>
-        </a>
-        <div class="c-header__button-wrapper">
-          <div class="c-login">
-            <a class="c-login__icon ">
-              <i
-                id="user"
-                class="far fa-user"
-                style="font-size: 20px; color: white;"
-              ></i
-            ></a>
-            <div class="c-login__container-wrapper">
-              <div class="c-login__container"></div>
-            </div>
+<body>
+  <header class="c-header" style="padding-bottom: 0;">
+    <div id="menuheader" class="c-header__wrapper">
+      <div class="c-header__sub-wrapper">
+        <a href="#" id="menup" alt="" class="c-header__p">
+          <span id="content-icon"></span></a>
+
+        <ul id="menu" class="c-header__submenu">
+          <li data-menuanchor="inicio" class="c-header__li-logo c-header__li-logo--active ">
+            <a href="#inicio" alt="inicio" class="c-header__logo">
+              <span id="color_menu" class="font">Inicio</span>
+            </a>
+          </li>
+          <li data-menuanchor="mas" class="c-header__li-logo ">
+            <a href="#" alt="mas" id="indice" class="c-header__logo c-header__mas">
+              <span id="color_menumas" class="font">Más</span></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="c-header__tools_wrapper"></div>
+      <a href="#" id="buscador" class="c-header__search-wrapper">
+        <i id="lupa" class="fas fa-search"></i>
+        <span id="barraBuscar" class="c-header__search">Buscar</span>
+      </a>
+      <div class="c-header__button-wrapper">
+        <div class="c-login">
+          <a class="c-login__icon ">
+            <i id="user" class="far fa-user" style="font-size: 20px; color: white;"></i></a>
+          <div class="c-login__container-wrapper">
+            <div class="c-login__container"></div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div id="fullpage">
-      <div class="section div-section1 ">
-        <div class="content-title" style="color:#FFFFFF;">
-          <h2 class="title text-white">Ropa pa regalar</h2>
-          <p class="sub text-white">Holidays Selection</p>
-        </div>
-        <a href="#"><span id="moveDown"></span></a>
+  <div id="fullpage">
+    <div class="section div-section1 ">
+      <div class="content-title" style="color:#FFFFFF;">
+        <h2 class="title text-white">Ropa pa regalar</h2>
+        <p class="sub text-white">Holidays Selection</p>
       </div>
-
-      <div class="section div-section2 ">
-        <div class="content-title">
-          <p class="sub text-blac">Colección hombre</p>
-          <h2 class="title text-black">LOREM IPSUMS</h2>
-        </div>
-        <a href="#"><span id="moveDownBlack"></span></a>
-      </div>
-
-      <div class="section div-section3">
-        <video data-autoplay class="video">
-          <source
-            src="media/y2mate.com - billie_eilish_bad_guy_DyDfgMOUjCI_720p.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
-
-      <div class="section div-section4 ">
-        <div class="content-title">
-          <p class="sub text-blac">Colección Mujer</p>
-          <h2 class="title text-black">LOREM IPSUMS</h2>
-        </div>
-        <a href="#"><span id="moveDownBlack"></span></a>
-      </div>
-
-      <footer class="section">
-          <div class="site-footer">
-              <div class="page-width">
-               <div class="text-left">
-                 <h4>logo</h4>
-               </div>
-               <div class="footerSection">
-                 <div class="footerSection-links">
-                   <div class="grid__item">
-                    <ul class="site-footer__linklist">
-                      <li class="site-footer__linklist-item">
-                        <a href="#">Contactos</a>
-                        <li class="site-footer__linklist-item">
-                          <a href="#">Nosotros</a>
-                        </li>
-                      </li>
-                    </ul>
-                   </div>
-                   <div class="grid__item">
-                     <ul class="site-footer__linklist">
-                       <li class="site-footer__linklist-item">
-                         <a href="#">Terminos y condiciones.</a>
-                       </li>
-                       <li class="site-footer__linklist-item">
-                          <a href="#">DALE CLIC WE.</a>
-                        </li>
-                     </ul>
-                   </div>
-                 </div>
-                 <div class="footerSection-social">
-                   <div class="grid__item">
-                     <ul class="list--inline site-footer__social-icons social-icons">
-                       <li>
-                         <a href="#" class="social-icons__link" title="SIWE">
-                           <img src="#" alt="redsocial">
-                           <span class="icon__fallback-text">Instagram</span>
-                         </a>
-                       </li>
-                       <li>
-                         <a href="#" class="social-icons__link">
-                           <img src="#" alt="fb">
-                           <span class="icon__fallback-text">Facebook</span>
-                         </a>
-                       </li>
-                       <li>
-                          <a href="#" class="social-icons__link">
-                            <img src="#" alt="twtter">
-                            <span class="icon__fallback-text">Twitter</span>
-                          </a>
-                        </li>
-                     </ul>
-                   </div>
-                 </div>
-               </div>
-              </div>
-    
-              <div class="footer-guia">
-                <h3>Guía de regalos</h3>
-                <ul>
-                  <li>Hola</li>
-                  <li>Hola2</li>
-                </ul>
-              </div>
-    
-    
-    
-            </div>
-      </footer>
+      <a href="#"><span id="moveDown"></span></a>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/app.js"></script>
-  </body>
+    <div class="section div-section2 ">
+      <div class="content-title">
+        <p class="sub text-blac">Colección hombre</p>
+        <h2 class="title text-black">LOREM IPSUMS</h2>
+      </div>
+      <a href="#"><span id="moveDownBlack"></span></a>
+    </div>
+
+    <div class="section div-section3">
+      <video data-autoplay class="video">
+        <source src="media/y2mate.com - billie_eilish_bad_guy_DyDfgMOUjCI_720p.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="section div-section4 ">
+      <div class="content-title">
+        <p class="sub text-blac">Colección Mujer</p>
+        <h2 class="title text-black">LOREM IPSUMS</h2>
+      </div>
+      <a href="#"><span id="moveDownBlack"></span></a>
+    </div>
+
+    <footer class="section footer-style">
+      <div class="site-footer">
+        <div class="page-width">
+          <div class="text-left">
+            <h4 class="logo-footer">logo</h4>
+          </div>
+          <div class="footerSection">
+            <div class="footerSection-links">
+              <div class="grid__item">
+                <ul class="site-footer__linklist">
+                  <li class="site-footer__linklist-item">
+                    <a href="#">Contactos</a>
+                  <li class="site-footer__linklist-item">
+                    <a href="#">Nosotros</a>
+                  </li>
+                  </li>
+                </ul>
+              </div>
+              <div class="grid__item">
+                <ul class="site-footer__linklist">
+                  <li class="site-footer__linklist-item">
+                    <a href="#">Terminos y condiciones.</a>
+                  </li>
+                  <li class="site-footer__linklist-item">
+                    <a href="#">DALE CLIC WE.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footerSection-social">
+              <div class="grid__item">
+                <ul class="list--inline site-footer__social-icons social-icons">
+                  <li>
+                    <i class="fab fa-instagram"></i>
+                    <span class="icon__fallback-text">Instagram</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-icons__link">
+                      <i class="fab fa-facebook"></i> <br>
+                      <span class="icon__fallback-text">Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="social-icons__link">
+                      <i class="fab fa-twitter-square"></i>
+                      <span class="icon__fallback-text">Twitter</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-guia">
+          <h3>Guía de regalos</h3>
+          <ul>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>

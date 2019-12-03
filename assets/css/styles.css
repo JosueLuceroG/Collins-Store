@@ -639,3 +639,19 @@ div.footerSection-links{
   border: 0;
 }
 
+/*Added style */
+
+.site-footer{
+  background-color: white!important;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footerSection{
+  align-content: space-between;
+  margin: 3px auto;
+}
+
+.grid__item{
+align-content: space-between;
+}
