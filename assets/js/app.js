@@ -1,6 +1,6 @@
 const ccña = new fullpage("#fullpage", {
-  autoScrolling: true,
-  fitToSection: false,
+  autoScrolling: false,
+  fitToSection: true,
   fitToSectionDelay: 300,
   easing: "easeInOutCubic",
   scrollingSpeed: 540,
@@ -11,11 +11,11 @@ const ccña = new fullpage("#fullpage", {
   showActiveTooltip: true,
   anchors: ["inicio", "2div", "3div", "4div", "footer"],
   menu: "#menu",
-  navigationTooltips: ["Pa regalar", "Colección Hombre", "Meme", "Colección Mujer", "Acerca de"],
-  sectionsColor: ["#000", "#000000", "#000"],
+  navigationTooltips: ["Pa regalar", "Colección Hombre", "Holidays", "Colección Mujer", "Acerca de"],
+  sectionsColor: ["#fffff", "#fffff", "fffff", "fffff", "#fffff"],
   // verticalCentered: true,
 
-  afterLoad: function(origin, destination, direction) {
+  afterLoad: function (origin, destination, direction) {
     if (destination.anchor == "inicio") {
       document.getElementById(
         "color_menu color_menumas menup lupa barraBuscar user menuheader"
@@ -35,7 +35,7 @@ const ccña = new fullpage("#fullpage", {
         "color_menu color_menumas menup lupa barraBuscar user menuheader"
       );
       color_menu.style.color = "black";
-      color_menumas.style.color = "black";
+      color_menumas.style.color = "white";
       menup.style.color = "black";
       lupa.style.color = "black";
       barraBuscar.style.color = "black";
@@ -83,17 +83,17 @@ const ccña = new fullpage("#fullpage", {
       barraBuscar.style.color = "black";
       barraBuscar.style.borderColor = "black";
       user.style.color = "black";
-      menuheader.style.backgroundColor = "rgb(255, 255, 255, 0.5)";
-    } 
+      menuheader.style.backgroundColor = "rgb(255, 255, 255, 0.77)";
+    }
   }
 });
 
 //adding the action to the button
-$(document).on("click", "#moveDown", function() {
+$(document).on("click", "#moveDown", function () {
   fullpage_api.moveSectionDown();
 });
 
-$(document).on("click", "#moveDownBlack", function() {
+$(document).on("click", "#moveDownBlack", function () {
   fullpage_api.moveSectionDown();
 });
 

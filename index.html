@@ -1,171 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Collin's</title>
+    <script
+      src="https://kit.fontawesome.com/94ae7ff0f2.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
+      />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="assets/css/pushbar.css">
+      <link rel="stylesheet" href="assets/css/styles.css" />
+      <link rel="stylesheet" href="assets/css/signup.css" />
+      <link rel="stylesheet" href="assets/css/login.css">
+      <link rel="shortcut icon" type="image/x-icon" href="media/collins.ico">
+  </head>
+  <body>
+    <header class="c-header" style="padding-bottom: 0;">
+      <div id="menuheader" class="c-header__wrapper">
+        <div class="c-header__sub-wrapper">
+          <a data-pushbar-target="pushbar-menu" href="#" id="menup" alt="" class="c-header__p">
+            <span id="content-icon"></span></a>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>CCÑA</title>
-  <script src="https://kit.fontawesome.com/94ae7ff0f2.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+            <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+                <div class="btn-cerrar left">
+                  <button data-pushbar-close><i class="fas fa-times"></i></button>
+                </div>
+                <nav class="pushMenu">
+                  <a href="index.html">Inicio</a>
+                  <a href="login.html">Acceso a clientes</a>
+                  <a href="#">Ver el catalogo</a>
+                  <a href="index.html#footer">Acerca de nosotros</a>
+                </nav>
+               </div>
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-
-<body>
-  <header class="c-header" style="padding-bottom: 0;">
-    <div id="menuheader" class="c-header__wrapper">
-      <div class="c-header__sub-wrapper">
-        <a href="#" id="menup" alt="" class="c-header__p">
-          <span id="content-icon"></span></a>
-
-        <ul id="menu" class="c-header__submenu">
-          <li data-menuanchor="inicio" class="c-header__li-logo c-header__li-logo--active ">
-            <a href="#inicio" alt="inicio" class="c-header__logo">
-              <span id="color_menu" class="font">Inicio</span>
-            </a>
-          </li>
-          <li data-menuanchor="mas" class="c-header__li-logo ">
-            <a href="#" alt="mas" id="indice" class="c-header__logo c-header__mas">
-              <span id="color_menumas" class="font">Más</span></a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="c-header__tools_wrapper"></div>
-      <a href="#" id="buscador" class="c-header__search-wrapper">
-        <i id="lupa" class="fas fa-search"></i>
-        <span id="barraBuscar" class="c-header__search">Buscar</span>
-      </a>
-      <div class="c-header__button-wrapper">
-        <div class="c-login">
-          <a class="c-login__icon ">
-            <i id="user" class="far fa-user" style="font-size: 20px; color: white;"></i></a>
-          <div class="c-login__container-wrapper">
-            <div class="c-login__container"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div id="fullpage">
-    <div class="section div-section1 ">
-      <div class="content-title" style="color:#FFFFFF;">
-        <h2 class="title text-white">Ropa pa regalar</h2>
-        <p class="sub text-white">Holidays Selection</p>
-      </div>
-      <a href="#"><span id="moveDown"></span></a>
-    </div>
-
-    <div class="section div-section2 ">
-      <div class="content-title">
-        <p class="sub text-blac">Colección hombre</p>
-        <h2 class="title text-black">LOREM IPSUMS</h2>
-      </div>
-      <a href="#"><span id="moveDownBlack"></span></a>
-    </div>
-
-    <div class="section div-section3">
-      <video data-autoplay class="video">
-        <source src="media/y2mate.com - billie_eilish_bad_guy_DyDfgMOUjCI_720p.mp4" type="video/mp4" />
-      </video>
-    </div>
-
-    <div class="section div-section4 ">
-      <div class="content-title">
-        <p class="sub text-blac">Colección Mujer</p>
-        <h2 class="title text-black">LOREM IPSUMS</h2>
-      </div>
-      <a href="#"><span id="moveDownBlack"></span></a>
-    </div>
-
-    <footer class="section footer-style">
-      <div class="site-footer">
-        <div class="page-width">
-          <div class="text-left">
-            <h4 class="logo-footer">logo</h4>
-          </div>
-          <div class="footerSection">
-            <div class="footerSection-links">
-              <div class="grid__item">
-                <ul class="site-footer__linklist">
-                  <li class="site-footer__linklist-item">
-                    <a href="#">Contactos</a>
-                  <li class="site-footer__linklist-item">
-                    <a href="#">Nosotros</a>
-                  </li>
-                  </li>
-                </ul>
-              </div>
-              <div class="grid__item">
-                <ul class="site-footer__linklist">
-                  <li class="site-footer__linklist-item">
-                    <a href="#">Terminos y condiciones.</a>
-                  </li>
-                  <li class="site-footer__linklist-item">
-                    <a href="#">DALE CLIC WE.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footerSection-social">
-              <div class="grid__item">
-                <ul class="list--inline site-footer__social-icons social-icons">
-                  <li>
-                    <i class="fab fa-instagram"></i>
-                    <span class="icon__fallback-text">Instagram</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-icons__link">
-                      <i class="fab fa-facebook"></i> <br>
-                      <span class="icon__fallback-text">Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="social-icons__link">
-                      <i class="fab fa-twitter-square"></i>
-                      <span class="icon__fallback-text">Twitter</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-guia">
-          <h3>Guía de regalos</h3>
-          <ul>
+          <ul id="menu" class="c-header__submenu">
+            <li
+              data-menuanchor="inicio"
+              class="c-header__li-logo c-header__li-logo--active">
+              <a href="#inicio" alt="inicio" class="c-header__logo">
+                <span id="color_menu" class="font">COLLIN'S</span>
+              </a>
+            </li>
+            <li data-menuanchor="mas" class="c-header__li-logo">
+              <a
+                href="#"
+                alt="mas"
+                id="indice"
+                class="c-header__logo c-header__mas">
+                <span id="color_menumas" class="font">Más</span></a>
+            </li>
           </ul>
         </div>
 
+        <div class="c-header__tools_wrapper"></div>
+        <a href="#" id="buscador" class="c-header__search-wrapper">
+          <i id="lupa" class="fas fa-search"></i>
+          <span id="barraBuscar" class="c-header__search">Buscar</span>
+        </a>
+        <div class="c-header__button-wrapper">
+
+          <div class="c-login">
+
+            <div class="menu-area">
+
+              <a class="c-login__icon">
+                <i id="user" class="far fa-user" style="font-size: 20px; color:
+                  white;"></i>
+              </a>
+              <div class="menu">
+                <a href="login.html">Iniciar Sesión</a>
+                <a href="signup.html">Registrarse</a>
+              </div>
 
 
+            </div>
+
+
+
+
+
+
+
+            <div class="c-login__container-wrapper">
+              <div class="c-login__container"></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-  </div>
+    </header>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="assets/js/app.js"></script>
-</body>
+    <div id="fullpage">
+      <div class="section div-section1">
+        <div class="content-title" style="color:#FFFFFF;">
+          <h2 class="title text-white">Ropa pa regalar</h2>
+          <p class="sub text-white">Holidays Selection</p>
+        </div>
+        <a href="#"><span id="moveDown"></span></a>
+      </div>
 
+      <div class="section div-section2">
+        <div class="content-title">
+          <p class="sub text-blac">Colección hombre</p>
+          <h2 class="title text-men">LO MEJOR PARA EL HOMBRE</h2>
+        </div>
+        <!-- <a href="#"><span id="moveDownBlack"></span></a> -->
+      </div>
+
+      <div class="section div-section3">
+          <div class="content-title">
+              <p class="sub">Colección navideña</p>
+              <h2 class="title text-green">CELEBRE LAS FELICES FIESTAS CON NOSOTROS</h2>
+            </div>
+        <video loop muted data-autoplay class="video">
+          <source
+            src="media/navidad.mp4"
+            type="video/mp4"
+            />
+        </video>
+        
+      </div>
+
+      <div class="section div-section4">
+        <div class="content-title">
+          <p class="sub text-blac">Colección Mujer</p>
+          <h2 class="title text-women">LO MEJOR PARA LA MUJER</h2>
+        </div>
+        <!--  <a href="#"><span id="moveDownBlack"></span></a> -->
+      </div>
+
+      <footer class="section">
+
+
+        <div class="footer_after">
+          <div class="flex_row">
+            <div class="element">
+              <a href="#">
+                <img
+                  src="https://static.oysho.net/6/static2/itxwebstandard/images/h/2019/12/01/01_calzado.jpg?t=20191210024505651605683"
+                  alt="img"
+                  style="width: 100%;">
+              </a>
+              <div class="element_text">
+                <span class="title">Calzado</span>
+                <a href="#"> Ver más </a>
+              </div>
+            </div>
+            <div class="element">
+              <a href="#">
+                <img
+                  src="https://static.oysho.net/6/static2/itxwebstandard/images/h/2019/12/01/02_acc.jpg?t=20191210024505651605683"
+                  alt="img2"
+                  style="width: 100%;">
+              </a>
+              <div class="element_text">
+                <span class="title">Accesorios</span>
+                <a href="#">
+                  Ver más
+                </a>
+              </div>
+            </div>
+            <div class="element">
+              <a href="#">
+                <img
+                  src="https://static.oysho.net/6/static2/itxwebstandard/images/h/2019/12/01/03_calcetines.jpg?t=20191210024505651605683"
+                  alt="img3"
+                  style="width: 100%;">
+              </a>
+              <div class="element_text">
+                <span class="title">Calcetines</span>
+                <a href="#">
+                  Ver más
+                </a>
+              </div>
+            </div>
+            <div class="element">
+              <a href="#">
+                <img
+                  src="https://static.oysho.net/6/photos2/2019/I/3/1/p/1776/859/401/1776859401_2_2_18.jpg?t=1572516918427&imwidth=768"
+                  alt="img4"
+                  style="width: 96%;">
+              </a>
+              <div class="element_text">
+                <span class="title">Holidays</span>
+                <a href="#">
+                  Ver más
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="site-footer">
+          <div class="page-width">
+            <div class="footerSection">
+              <div class="footerSection-links">
+                <div class="grid__item">
+                  <ul class="site-footer__linklist">
+                    <li class="site-footer__linklist-item">
+                      <a href="#" style="color: #919191;;">Contactos</a>
+                      <li class="site-footer__linklist-item">
+                        <a href="#" style="color: #919191;;">Nosotros</a>
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+                <div class="grid__item">
+                  <ul class="site-footer__linklist">
+                    <li class="site-footer__linklist-item">
+                      <a href="#" style="color: #919191;;">Terminos y
+                        condiciones.</a>
+                    </li>
+                    <li class="site-footer__linklist-item">
+                      <a href="#" style="color: #919191;;">Conoce más</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footerSection-social">
+                <div class="grid__item">
+                  <h5 style="color: #919191;">Siguenos</h5>
+                  <ul class="list--inline site-footer__social-icons
+                    social-icons">
+                    <li>
+                      <a href="https://www.instagram.com/josueisai_/" target="_blank" class="social-icons__link" title="Instagram">
+                        <span><i class="fab fa-instagram" style="color:
+                            #BEBEBE;"></i></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/iswguaymas/" target="_blank" class="social-icons__link" title="Facebook">
+                        <span><i class="fab fa-facebook" style="color:
+                            #BEBEBE;"></i></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/lilycollins" target="_blank" class="social-icons__link" title="Twitter">
+                        <span><i class="fab fa-twitter" style="color: #BEBEBE;"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="footer-guia">
+            <h5 style="color: #919191;">Guía de regalos</h5>
+            <ul style="list-style: none;">
+              <a href="#3div" style="font-weight: 400; color: #BEBEBE;
+                font-size: 12px;">Holidays,</a>
+              <a href="#2div" style="font-weight: 400; color: #BEBEBE;
+                font-size: 12px;">Colección Hombre,</a>
+              <a href="#4div" style="font-weight: 400; color: #BEBEBE;
+                font-size: 12px;">Colección Mujer</a>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/pushbar.js"></script>
+    <script>
+      var pushbar = new Pushbar({
+        blur: true,           //Blur es como que la pantalla se ponga negra
+        overlay: true
+      });
+    </script>
+  </body>
 </html>

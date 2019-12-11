@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ACCESO A CLIENTES | INICIAR SESION</title>
+    <script
+      src="https://kit.fontawesome.com/94ae7ff0f2.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
+      />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+      />
+    <link rel="stylesheet" href="assets/css/pushbar.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="media/collins.ico">
+    
+  </head>
+  <body>
+    <header class="c-header" style="padding-bottom: 0;">
+      <div id="menuheader" class="c-header__wrapper">
+        <div class="c-header__sub-wrapper">
+          <a data-pushbar-target="pushbar-menu" href="#" id="menup" alt="" class="c-header__p">
+            <span id="content-icon"></span></a>     
+      <div data-pushbar-id="pushbar-menu" class="pushbar from_left pushbar-menu">
+        <div class="btn-cerrar left">
+          <button data-pushbar-close><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="pushMenu">
+          <a href="index.html">Inicio</a>
+          <a href="login.html">Acceso a clientes</a>
+          <a href="#">Ver el catalogo</a>
+          <a href="index.html#footer">Acerca de nosotros</a>
+        </nav>
+       </div>
+          <ul id="menu" class="c-header__submenu">
+            <li
+              data-menuanchor="inicio"
+              class="c-header__li-logo c-header__li-logo--active">
+              <a href="index.html" alt="inicio" class="c-header__logo">
+                <span id="color_menu" class="font" >COLLIN'S</span>
+              </a>
+            </li>
+            <li data-menuanchor="mas" class="c-header__li-logo">
+              <a
+                href="#"
+                alt="mas"
+                id="indice"
+                class="c-header__logo c-header__mas">
+                <span id="color_menumas" class="font">Más</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="c-header__tools_wrapper"></div>
+        <a href="#" id="buscador" class="c-header__search-wrapper">
+          <i id="lupa" class="fas fa-search"></i>
+          <span id="barraBuscar" class="c-header__search">Buscar</span>
+        </a>
+        <div class="c-header__button-wrapper">
+
+          <div class="c-login">
+
+            <div class="menu-area">
+
+              <a class="c-login__icon">
+                <i id="user" class="far fa-user" style="font-size: 20px; color:
+                  white;"></i>
+              </a>
+              <div class="menu">
+                <a href="login.html">Iniciar Sesión</a>
+                <a href="signup.html">Registrarse</a>
+              </div>
+
+
+            </div>
+
+
+            <div class="c-login__container-wrapper">
+              <div class="c-login__container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div id="fullpage">
+
+      <section class="section page-main container">
+          
+          <div class="row">
+                <p>IDENTIFICATE</p> <hr>
+              <div class="column main col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  
+                  <div class="login-container">
+                      
+                      <div class="block block-customer-login" >
+                        <div class="block-title">
+                            <strong>Ya soy usuario</strong></div>
+                            <div class="block-content">
+                                <form class="form form-login" action="">
+                                    <fieldset class="fieldset" data-hasrequired="* Campos obligatorios">
+                                        <div class="field"><b>Introduce tu email y contraseña.</b></div><br>
+                                        <div class="field">
+                                            <label class="label" for="email"><span style="text-transform: uppercase;">Correo electronico</span></label>
+                                            <div >
+                                                <input value="" autocomplete="off" type="email" name=""  id="email"  title="" required>
+                                            </div>
+
+                                        </div>
+                                        <div class="field">
+                                            <label for="" class="label"><span style="text-transform: uppercase;">contraseña</span></label>
+                                            <div>
+                                                <input value="" type="password" name=""  id="email"  title="" required>
+                                            </div>
+                                        </div>
+                                        <div class="actions-toolbar">
+                                            <div class="primary">
+                                                <button type="submit" class="action login primary" name="" id="">
+                                                    <span>iniciar sesión</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        
+                        
+                    </div>
+                    <div class="block block-new-customer" style="min-height: 380px;">
+                            <div class="block-title">
+                                Nuevo usuario
+                            </div>
+                            <div class="block-content">
+                                <p>Si todavía no cuenta con una cuenta de usuario, utiliza esta opción para acceder al formulario de registro.
+                                    Te solicitaremos la información personal.</p>
+                            <div class="actions-toolbar">
+                                <div class="primary">
+                                    <a href="signup.html" class="action create primary" style="text-decoration: none;">
+                                        <span>Crear cuenta</span>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                  </div>
+                  
+              </div>
+              
+          </div>
+       
+           
+        
+      </section>
+
+
+
+      <footer class="">
+
+          <div style="text-align: center;">
+              <img src="media/53e1e99b-1ef2-4274-8753-db48835df79e_200x200.png" alt="">
+            </div>
+       
+
+
+        <div class="site-footer">
+          <div class="page-width">
+            <div class="footerSection">
+              <div class="footerSection-links">
+                <div class="grid__item">
+                  <ul class="site-footer__linklist">
+                    <li class="site-footer__linklist-item">
+                      <a href="#" style="color: #919191;;">Contactos</a>
+                      <li class="site-footer__linklist-item">
+                        <a href="#" style="color: #919191;;">Nosotros</a>
+                      </li>
+                    </li>
+                  </ul>
+                </div>
+                <div class="grid__item">
+                  <ul class="site-footer__linklist">
+                    <li class="site-footer__linklist-item">
+                      <a href="#" style="color: #919191;;">Terminos y
+                        condiciones.</a>
+                    </li>
+                    <li class="site-footer__linklist-item">
+                      <a href="#" style="color: #919191;;">Conoce más</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footerSection-social">
+                <div class="grid__item">
+                  <h5 style="color: #919191;">Siguenos</h5>
+                  <ul class="list--inline site-footer__social-icons
+                    social-icons">
+                    <li>
+                      <a href="#" class="social-icons__link" title="Instagram">
+                        <span><i class="fab fa-instagram" style="color:
+                            #BEBEBE;"></i></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-icons__link" title="Facebook">
+                        <span><i class="fab fa-facebook" style="color:
+                            #BEBEBE;"></i></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="social-icons__link" title="Twitter">
+                        <span><i class="fab fa-twitter" style="color: #BEBEBE;"></i></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="footer-guia">
+            <h5 style="color: #919191;">Guía de regalos</h5>
+            <ul style="list-style: none;">
+              <a href="#inicio" style="font-weight: 400; color: #BEBEBE;
+                font-size: 12px;">Holidays,</a>
+              <a href="#2div" style="font-weight: 400; color: #BEBEBE;
+                font-size: 12px;">Colección Hombre,</a>
+              <a href="#4div" style="font-weight: 400; color: #BEBEBE;
+                font-size: 12px;">Colección Mujer</a>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </footer>
+    </div>
+
+    
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/applogin.js"></script>
+    <script src="assets/js/pushbar.js"></script>
+    <script>
+        var pushbar = new Pushbar({
+          blur: true,           //Blur es como que la pantalla se ponga negra
+          overlay: true
+        });
+      </script>
+  </body>
+</html>

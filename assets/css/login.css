@@ -1,0 +1,92 @@
+@font-face {
+	font-family: HelveticaNeue;
+	src: url(../font/HelveticaNeue.ttf);
+}
+
+.fieldset .field {
+	margin-bottom: 15px;
+}
+
+.fieldset .field .label,
+.form-group {
+	color: #000;
+	font-weight: 400;
+	padding: 0;
+	margin: 0 0 8px;
+	font-size: 13px;
+	display: block;
+	text-align: left;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+	background: #fff;
+	border: 1px solid #c6c6c6;
+	font-size: 14px;
+	height: 40px;
+	width: 100%;
+}
+
+.login-container > .block + .block {
+	margin-left: 30px;
+}
+
+.login-container .block-new-customer {
+	padding-bottom: 80px;
+	position: relative;
+}
+
+.login-container > .block {
+	width: calc(50% - 15px);
+	float: left;
+	border: 1px solid #bcbcbc;
+	min-height: 380px;
+}
+
+.login-container > .block .block-title {
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: .1em;
+	color: black;
+	border-bottom: 1px solid #eee;
+	padding: 10px 15px;
+	font-family: HelveticaNeue;
+	font-weight: 900;
+}
+
+.login-container > .block .block-content {
+	padding: 25px 15px;
+}
+
+.login-container .block-new-customer .actions-toolbar {
+	position: absolute;
+	left: 20px;
+	bottom: 25px;
+}
+
+.btn,
+.action.primary {
+	font-size: 15px;
+	font-weight: 100;
+	padding: 9px 28px;
+	text-transform: uppercase;
+	border: 0px;
+	font-family: HelveticaNeue;
+}
+
+.btn.btn-primary,
+.action.primary {
+	color: #fff;
+	background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+	.login-container > .block {
+		width: 90%;
+		margin: 30px 0px 0px 30px;
+		padding: 0px 0px 0px 0px;
+		border: 1px solid #bcbcbc;
+		min-height: 380px;
+	}
+}
