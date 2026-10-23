@@ -125,9 +125,7 @@ Abre `http://localhost:8000` en el navegador. Las dependencias de interfaz se ca
 
 Diseño y desarrollo: **Josué Lucero**.
 
-Proyecto de portafolio. Todos los derechos reservados. CheckID, Windows, Excel, Qt y PySide6 son marcas de sus respectivos titulares; este proyecto no está afiliado a ellos.
-
----
+Proyecto de portafolio. Todos los derechos reservados.
 
 <div align="center">
   <sub>Hecho en México · <a href="https://github.com/JosueLuceroG">github.com/JosueLuceroG</a></sub>
