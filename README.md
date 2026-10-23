@@ -116,15 +116,6 @@ Abre `http://localhost:8000` en el navegador. Las dependencias de interfaz se ca
 - **Backend:** no incluido.
 - **Imágenes de categorías:** servidas localmente para que la demo no dependa de URLs externas.
 
-## Créditos
-
-Diseño y desarrollo: **Josué Lucero**. Las fotografías de moda y los videos se incluyen como material de demostración; sus derechos pertenecen a sus respectivos autores.
-
-## Enlaces
-
-- [Perfil de Josué Lucero](https://github.com/JosueLuceroG)
-
----
 
 <div align="center">
   <sub>Proyecto de portafolio. Código disponible para revisión. Todos los derechos reservados.</sub>
